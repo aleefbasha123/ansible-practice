@@ -1,5 +1,6 @@
 - name: ping the server
-  hosts: 172.31.94.193
+  hosts: web
   tasks:
   - name: pinging the server
     ansible.builtin.ping:
+      msg: "Hello web server ping succeffully"
