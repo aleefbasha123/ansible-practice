@@ -3,6 +3,6 @@
   tasks:
   - name: pinging the server
     ansible.builtin.debug:
-      msg: "aleef basha"
+      msg: "Hello web server ping succeffully"
 
 
