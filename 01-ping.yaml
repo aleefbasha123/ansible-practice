@@ -1,13 +1,8 @@
-# - name: ping the server
-#   hosts: web
-#   tasks:
-#   - name: pinging the server
-#     ansible.builtin.debug:
-#       msg: "Hello web server ping succeffully"
-
 - name: ping the server
   hosts: web
   tasks:
-  - name: piniging the web server
+  - name: pinging the server
     ansible.builtin.debug:
-      msg: " Hi my name is Aleef Basha"
+      msg: "Hello web server ping succeffully"
+
+

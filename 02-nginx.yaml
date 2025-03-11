@@ -1,12 +1,26 @@
-- name: installing nginx 
+# - name: installing nginx 
+#   hosts: web
+#   become: yes
+#   tasks:
+#   - name: Insatting nginx
+#     ansible.builtin.dnf:
+#       name: nginx
+#       state: latest
+#   - name: start and enable nginx
+#     ansible.builtin.service:
+#       name: nginx
+#       state: started
+#       enabled: yes
+
+- name: Installing Nginx
   hosts: web
-  become: yes
   tasks:
-  - name: Insatting nginx
+  - name: Installing Nginx
     ansible.builtin.dnf:
       name: nginx
       state: latest
-  - name: start and enable nginx
+
+  - name: start and restart Nginx
     ansible.builtin.service:
       name: nginx
       state: started
