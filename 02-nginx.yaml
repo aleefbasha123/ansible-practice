@@ -16,8 +16,8 @@
   become: yes
   tasks:
   - name: Installing Nginx
-    ansible.builtin.dbf:
-       name: nginx
-       state: latest
+    ansible.builtin.dnf:
+     name: nginx
+     state: latest
     
   
