@@ -14,6 +14,7 @@
 
 - name: Installing Nginx
   hosts: web
+  become: yes
   tasks:
   - name: Installing Nginx
     ansible.builtin.dnf:
