@@ -8,6 +8,6 @@
 - name: ping the server
   hosts: web
   tasks:
-  - name: pinging the server
+  - name: piniging the web server
     ansible.builtin.debug:
-      msg:"Hi My name is SYED ALEEF BASHA"
+      msg: " Hi my name is Aleef Basha"
