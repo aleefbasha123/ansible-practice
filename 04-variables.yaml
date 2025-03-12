@@ -20,4 +20,4 @@
   tasks:
   - name: print the variables information
     ansible.builtin.debug:
-       msg: " Hi I am learning course {{ course}} from {{ trainer }} durationis {{ duration }}"
+       msg: " Hi I am learning course {{ course}} from {{ Trainer }} durationis {{ duration }}"
