@@ -9,4 +9,4 @@
   tasks:
   - name: tasks level varibales
     ansible.builtin.debug:
-      msg: "Hi My name is {{ name }}, I am learning course {{ courser}} from {{ trainer }} courser learing duration is {{ duration }}"
+      msg: "Hi My name is {{ name }}, I am learning course {{ course}} from {{ trainer }} courser learing duration is {{ duration }}"
