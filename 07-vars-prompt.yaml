@@ -6,7 +6,7 @@
     private: false
   - name: password
     prompt: please enter the password
-    private: true
+    private: false
 
   tasks:
   - name: print the useranme and password
