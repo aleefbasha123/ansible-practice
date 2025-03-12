@@ -1,0 +1,12 @@
+- name: varibale declaring task level
+  hosts: localhost
+  vars:
+    course: "Ansinle"
+    trainer: "siva kumar"
+    duration: "4 months"
+    name: "SYED ALEEF BASHA"
+
+  tasks:
+  - name: tasks level varibales
+    ansible.builtin.debug:
+      msg: "Hi My name is {{ name }}, I am learning course {{ courser}} from {{ trainer }} courser learing duration is {{ duration }}"
