@@ -15,5 +15,5 @@
   
 
   - name: print information
-    ansible.builtin.debg:
+    ansible.builtin.debug:
       ms: " Hi my name is {{ name }}, I am learning {{ course }} from {{ trainer }} courser learning duration is {{ duration }} "
