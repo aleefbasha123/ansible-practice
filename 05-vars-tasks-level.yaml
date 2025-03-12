@@ -8,5 +8,12 @@
 
   tasks:
   - name: tasks level varibales
+    vars: 
+      course: "Devops"
     ansible.builtin.debug:
-      msg: "Hi My name is {{ name }}, I am learning course {{ course}} from {{ trainer }} courser learing duration is {{ duration }}"
+      msg: "Hi My name is {{ name }}, I am learning course {{ course}} from {{ trainer }} course learing duration is {{ duration }}"
+  
+
+  - name: print information
+    ansible.builtin.debg:
+      ms: " Hi my name is {{ name }}, I am learning {{ course }} from {{ trainer }} courser learning duration is {{ duration }} "
