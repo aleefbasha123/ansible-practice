@@ -13,25 +13,25 @@
   - mysql
 
   
-- name: create expense user
-  ansible.builtin.user:
-    name: expense
-    state: present
+# - name: create expense user
+#   ansible.builtin.user:
+#     name: expense
+#     state: present
 
-- name: careate app directory
-  ansible.builtin.file:
-    path: /app
-    state: directory
+# - name: careate app directory
+#   ansible.builtin.file:
+#     path: /app
+#     state: directory
 
-- name: downlaod backned code
-  ansible.builtin.get_url:
-    url: https://expense-builds.s3.us-east-1.amazonaws.com/expense-{{ component }}-v2.zip
-    dest: /tmp/backend.zip
+# - name: downlaod backned code
+#   ansible.builtin.get_url:
+#     url: https://expense-builds.s3.us-east-1.amazonaws.com/expense-{{ component }}-v2.zip
+#     dest: /tmp/backend.zip
 
-# - name: run app pre-re-requsities
-#   ansible.builtin.import_role:
-#     name: common
-#     tasks_from: app-pre-req
+- name: run app pre-re-requsities
+  ansible.builtin.import_role:
+    name: common
+    tasks_from: app-pre-req
 
 - name: unzip backend code
   ansible.builtin.unarchive:
@@ -72,7 +72,7 @@
 
 - name: daemon relaod
   ansible.builtin.systemd_service:
-   daemon_reload: True
+   daemon_reload: true
 
 - name: start and enable backend 
   ansible.builtin.service:
