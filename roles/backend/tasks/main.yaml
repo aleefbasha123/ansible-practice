@@ -45,7 +45,7 @@
   args:
     chdir: /app
 
-- name: cpoy backend service
+- name: copy backend service
   ansible.builtin.template:
     src: backend.service.j2
     dest: /etc/systemd/system/backend.service
@@ -70,7 +70,7 @@
     #ignore_errors: yes
   
 
-- name: deamon relaod
+- name: daemon relaod
   ansible.builtin.systemd_service:
    daemon_reload: True
 
