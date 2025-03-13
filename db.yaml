@@ -1,7 +1,7 @@
-- name: configure db server
-  hosts: db
+- name: configure "{{ component }}" server
+  hosts: "{{ component }}"
   vars:files:
   - passwords.yaml
   become: yes
   roles:
-  - db
+  - "{{ component }}"
