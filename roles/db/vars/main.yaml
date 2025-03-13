@@ -1,4 +1,4 @@
-# mysql_root_password: ExpenseApp@1
-# # login_host: db.aleef.fun
-# # component: db
-# # app_loaction: /usr/share/nginx/html
+mysql_root_password: ExpenseApp@1
+# login_host: db.aleef.fun
+# component: db
+# app_loaction: /usr/share/nginx/html
