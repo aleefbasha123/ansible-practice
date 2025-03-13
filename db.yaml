@@ -4,4 +4,4 @@
   - passwords.yaml
   become: yes
   roles:
-  - "{{ component }}"
+  -  "{{ component }}"
