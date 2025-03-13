@@ -5,3 +5,4 @@
 
 BACKEND_API_URL: backend.aleef.fun
 component: frontend
+app_loaction: /usr/share/nginx/html
