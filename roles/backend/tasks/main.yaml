@@ -13,10 +13,10 @@
   - mysql
 
   
-# - name: create expense user
-#   ansible.builtin.user:
-#     name: expense
-#     state: present
+- name: create expense user
+  ansible.builtin.user:
+    name: expense
+    state: present
 
 # - name: careate app directory
 #   ansible.builtin.file:
